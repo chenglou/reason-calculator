@@ -8,10 +8,10 @@ const lower = name =>
 
 const root = path.join(__dirname, '..')
 const script = process.argv[2]
-const output = lower(script.replace(path.join(root, 'lib', 'js'), ''))
+const output = script.replace(path.join(root, 'lib', 'js'), '')
 const js = path.join(path.dirname(script), lower(script))
 
 fs.writeFileSync(
-  path.join(root, output),
+  path.join(root, path.dirname(output), lower(output)),
   fs.readFileSync(js)
 )
