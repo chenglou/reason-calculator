@@ -235,9 +235,9 @@ async@^1.4.0, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.2, async@^2.1.4, async@~2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.1.5.tgz#e587c68580994ac67fc56ff86d3ac56bdbe810bc"
+async@^2.1.2, async@^2.1.4:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
   dependencies:
     lodash "^4.14.0"
 
@@ -248,6 +248,12 @@ async@~0.1.22:
 async@~0.9.0:
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/async/-/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
+
+async@~2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.1.5.tgz#e587c68580994ac67fc56ff86d3ac56bdbe810bc"
+  dependencies:
+    lodash "^4.14.0"
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -3764,11 +3770,7 @@ reason-js@^0.3.0:
   dependencies:
     bs-fetch BuckleTypes/bs-fetch
 
-reason-react@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.1.0.tgz#e043db84254d3b85174925997f7e1740b4b425f7"
-
-"reason-react@https://github.com/reasonml/reason-react.git":
+"reason-react@git+https://github.com/reasonml/reason-react.git", "reason-react@https://github.com/reasonml/reason-react.git":
   version "0.1.0"
   resolved "https://github.com/reasonml/reason-react.git#503f7e3a54222b2c3f403fc632da2fd20a118060"
 
