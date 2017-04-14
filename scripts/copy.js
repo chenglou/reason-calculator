@@ -9,5 +9,5 @@ const output = script.replace(path.join(root, 'lib', 'js'), '')
 
 fs.writeFileSync(
   path.join(root, output),
-  fs.readFileSync(script)
+  fs.readFileSync(script.toLowerCase())
 )
