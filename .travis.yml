@@ -7,6 +7,10 @@ node_js:
   - 6
   - 4
 
+before_script:
+  - /usr/local/bin/node --version
+  - which node
+
 cache:
   directories:
     - $HOME/.cache
