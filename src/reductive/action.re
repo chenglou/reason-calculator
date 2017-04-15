@@ -7,7 +7,8 @@ type model =
   | Input string
   | Multiply
   | Subtract
-  | PosNeg;
+  | PosNeg
+  | Percent;
 
 /* model -> (float -> float -> float) */
 let toInfix action =>
@@ -24,11 +25,12 @@ let toInfix action =>
 let toText action =>
   switch action {
     | Add => "+"
-    | Clear => "Clear"
+    | Clear => "C"
     | Divide => "&divide;"
     | Equals => "="
     | Multiply => "&times;"
     | Subtract => "&minus;"
     | PosNeg => "+/&minus;"
+    | Percent => "%"
     | _ => ""
   };

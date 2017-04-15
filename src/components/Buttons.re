@@ -9,8 +9,9 @@ module Buttons = {
   let render { props: { dispatch } } =>
     <div>
       <ButtonGroup>
-        <ClearButton dispatch />
+        <GreenButton dispatch action=Clear />
         <GreenButton dispatch action=PosNeg />
+        <GreenButton dispatch action=Percent />
         <OperationButton dispatch action=Divide />
       </ButtonGroup>
       <ButtonGroup>
